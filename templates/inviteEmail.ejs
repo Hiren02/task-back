@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Invitation</title>
+		<style>
+			body {
+				font-family: "Arial", sans-serif;
+				background-color: #f4f4f4;
+				margin: 0;
+				padding: 0;
+			}
+
+			.container {
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #ffffff;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			h1 {
+				color: #333333;
+			}
+
+			p {
+				color: #555555;
+			}
+
+			.button {
+				display: inline-block;
+				padding: 10px 20px;
+				font-size: 16px;
+				text-align: center;
+				text-decoration: none;
+				color: #111111;
+				background-color: #007bff;
+				border-radius: 5px;
+			}
+
+			.footer {
+				margin-top: 20px;
+				color: #777777;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>Invitation</h1>
+			<p>Dear user,</p>
+			<p>You are invited by Schedulewood.</p>
+			<% if (typeof password != 'undefined' ) { %>
+			<p>Here is your password for login "<%= password %>".</p>
+			<%}%>
+			<a href="<%= baseUrl %>">View Invitation</a>
+			<div class="footer">
+				<p>Best regards,<br />Schedulewood</p>
+			</div>
+		</div>
+	</body>
+</html>
